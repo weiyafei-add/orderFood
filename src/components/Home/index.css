@@ -1,0 +1,113 @@
+.root .ant-layout {
+  height: 100%;
+}
+.ant-layout-header .logo {
+  width: 65px;
+  height: 60px;
+  margin-top: 2px;
+  margin-right: 100px;
+  float: left;
+  border-radius: 5px;
+  background-image: url(../../assets//avatar.png);
+  background-size: cover;
+}
+
+.site-layout-background {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 270px);
+  justify-content: space-around;
+}
+
+.site-layout-background > div {
+  margin-bottom: 24px;
+}
+.site-layout-background-last-child {
+  margin-right: 270px;
+}
+.site-layout-background::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.ant-card {
+  flex: 0 0 250px;
+}
+.ant-card:hover {
+  border-color: #40a9ff;
+  box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  transition: all 0.2s;
+}
+.ant-card .ant-card-cover {
+  overflow: hidden;
+  position: relative;
+}
+.ant-card .ant-card-cover .querySimilar {
+  width: 100%;
+  padding: 3px 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  cursor: pointer;
+}
+.site-layout-background .foodImg {
+  transition: all 1s;
+}
+.site-layout-background .foodImg:hover {
+  transform: scale(1.3);
+}
+.ant-card:hover .querySimilar {
+  bottom: 0;
+}
+.ant-layout .contentWrapper {
+  min-height: initial;
+  background: #fff;
+}
+.ant-layout .contentWrapper .loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50% -50% 0);
+}
+.foodCate {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.iconfont {
+  margin-right: 5px;
+}
+.ant-menu-item.cart {
+  margin-left: 500px;
+}
+.priceBox {
+  margin-top: 15px;
+}
+.priceBox .price {
+  color: red;
+  font-size: 1.2rem;
+}
+.ant-card-meta-description {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.fly-enter,
+.fly-appear {
+  transform: translate3d(100%, 0, 0);
+}
+.fly-enter-active,
+.fly-appear-active {
+  transition: all 0.4s;
+  transform: translate3d(0, 0, 0);
+}
+.fly-exit {
+  transform: translate3d(0, 0, 0);
+}
+.fly-exit-active {
+  transition: all 0.4s;
+  transform: translate3d(100%, 0, 0);
+}
