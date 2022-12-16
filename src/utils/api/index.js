@@ -1,3 +1,3 @@
-let baseUrl = 'http://127.0.0.1:7001'
+let baseUrl = 'http://localhost:7001'
 
 export { baseUrl }
